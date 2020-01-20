@@ -8,7 +8,7 @@ steps:
 - task: Maven@3
   inputs:
     mavenPomFile: 'order-rest-backend/pom.xml'
-    goals: 
+    goals: clean package
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     javaHomeOption: 'JDKVersion'
